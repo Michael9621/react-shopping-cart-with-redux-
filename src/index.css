@@ -1,17 +1,14 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-
 body,
 #root {
   height: 100vh;
   margin: 0;
 }
-
 body,
 input,
 select,
@@ -31,14 +28,12 @@ textarea {
   grid-template-columns: 1fr;
   height: 100%;
 }
-
 a {
   text-decoration: none;
 }
 a:hover {
   color: #ff8000;
 }
-
 header {
   grid-area: header;
   background-color: #203040;
@@ -48,12 +43,10 @@ header {
   align-items: center;
   padding: 0.5rem;
 }
-
 header a {
   color: #ffffff;
   text-decoration: none;
 }
-
 main {
   grid-area: main;
 }
@@ -87,25 +80,21 @@ footer {
   margin: 0;
   list-style-type: none;
 }
-
 .products li {
   flex: 0 1 29rem;
   height: 47rem;
   padding: 1rem;
 }
-
 .product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-
 .product img {
   max-width: 37rem;
   max-height: 37rem;
 }
-
 .product-price {
   display: flex;
   justify-content: space-between;
@@ -131,7 +120,6 @@ footer {
 .button.primary {
   background-color: #f0c040;
 }
-
 /* Filter */
 .filter {
   display: flex;
@@ -143,7 +131,6 @@ footer {
 .filter div {
   flex: 1;
 }
-
 /* Index.css */
 .cart {
   padding: 1rem;
@@ -153,7 +140,6 @@ footer {
 .cart-header {
   border-bottom: 0.1rem #c0c0c0 solid;
 }
-
 .cart-items {
   padding: 0;
   width: 100%;
@@ -174,7 +160,6 @@ footer {
 .right {
   text-align: right;
 }
-
 .total {
   display: flex;
   justify-content: space-between;
@@ -188,7 +173,6 @@ footer {
 .total > button {
   flex: 1;
 }
-
 /* Checkout form */
 form {
   width: 100%;
@@ -207,7 +191,6 @@ input {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
 }
-
 /* Product Details */
 .product-details {
   display: flex;
@@ -254,4 +237,18 @@ input {
 }
 .success-message {
   color: green;
+}
+/* Orders */
+.orders {
+  width: 100%;
+  padding: 10px;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+td {
+  padding: 5px;
+}
+th {
+  text-align: left;
 }
